@@ -1,0 +1,293 @@
+{
+	"info": {
+		"_postman_id": "634fdd00-4360-4556-b0d5-2e8d2dda2fb2",
+		"name": "ReactiveCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ReactiveClientCollections",
+			"item": [
+				{
+					"name": "SaveEmployee",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\":\"Babun\",\n\t\"salary\":\"3000\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8085/rest/employee/client/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"rest",
+								"employee",
+								"client",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllEmployee",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8085/rest/employee/client/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"rest",
+								"employee",
+								"client",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetEmployeeById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8085/rest/employee/client/get/11e9a2a2-e5ce-414f-b78e-ebba8ed8083f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"rest",
+								"employee",
+								"client",
+								"get",
+								"11e9a2a2-e5ce-414f-b78e-ebba8ed8083f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateEmployee",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"11e9a2a2-e5ce-414f-b78e-ebba8ed8083f\",\r\n    \"name\": \"Baby\",\r\n    \"salary\": 12500.0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8085/rest/employee/client/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"rest",
+								"employee",
+								"client",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllEmployee",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8085/rest/employee/client/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"rest",
+								"employee",
+								"client",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteEmployee",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8085/rest/employee/client/delete/11e9a2a2-e5ce-414f-b78e-ebba8ed8083f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"rest",
+								"employee",
+								"client",
+								"delete",
+								"11e9a2a2-e5ce-414f-b78e-ebba8ed8083f"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "SaveEmployee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"Babun\",\n\t\"salary\":\"3000\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8085/rest/employee/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"rest",
+						"employee",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllEmployee",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8085/rest/employee/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"rest",
+						"employee",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetEmployeeById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8085/rest/employee/get/2fa938de-f112-4e4f-94cb-d813de246628",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"rest",
+						"employee",
+						"get",
+						"2fa938de-f112-4e4f-94cb-d813de246628"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateEmployee",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"ba667f99-b3d1-46b4-9b2c-6a6f72392397\",\r\n    \"name\": \"Babun\",\r\n    \"salary\": 95200.0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8085/rest/employee/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"rest",
+						"employee",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteEmployee",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8085/rest/employee/delete/0b769c21-6453-484f-814f-eb6c77b4a636",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"rest",
+						"employee",
+						"delete",
+						"0b769c21-6453-484f-814f-eb6c77b4a636"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
