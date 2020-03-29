@@ -35,9 +35,9 @@ public class EmployeeService {
 	}
 
 	public Mono<Void> delete(String id) {
-		return Mono.just(id)	
-	    .flatMap(repo::deleteById)
-	    .switchIfEmpty(Mono.error(new EmployeeIdNotFoundException()));
+		return findById(id)
+			.switchIfEmpty(Mono.error(new EmployeeIdNotFoundException()))
+			.flatMap(e->repo.delete(e));
 	}
 
 }
